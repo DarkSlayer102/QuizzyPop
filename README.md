@@ -23,7 +23,7 @@ Key Features:
 
 9. LocalStorage Database: User data, including login credentials, scores, and progress, is securely stored in the browser's LocalStorage. This ensures data persistence across sessions, providing a seamless and uninterrupted quiz experience.
 
-10. Login and Registration: Users can either log in or register for an account, unlocking enhanced features and comprehensive quiz history tracking. The login form includes robust validation to ensure data integrity.
+10. Login: Users can either log in an account, unlocking enhanced features and comprehensive quiz. The login form includes robust validation to ensure data integrity.
 
 11. Custom Styling and Theming: The application's visual aesthetics are meticulously designed using CSS styling. Users have the flexibility to select different themes, allowing them to customize their quiz environment.
 
