@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@100&family=Black+Ops+One&family=Noto+Sans+JP:wght@100;300&family=Noto+Serif:wght@500&family=Nunito:wght@400;600&family=Open+Sans:ital,wght@0,300;1,300&family=Red+Hat+Display&family=Sedgwick+Ave+Display&family=Ubuntu:wght@300&display=swap");
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#08213f), to(#547b92));
+  background: linear-gradient(90deg, #08213f 0%, #547b92 100%);
+  color: white !important;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+li {
+  list-style-type: none;
+  background: -webkit-gradient(linear, left top, right top, from(#0db5f8), to(#ed2c52));
+  background: linear-gradient(90deg, #0db5f8 0%, #ed2c52 100%);
+  border-radius: 9px;
+  width: 140px;
+  height: 40px;
+  text-align: center;
+}
+
+li:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#05c9fa), to(#e4f61e));
+  background: linear-gradient(90deg, #05c9fa 0%, #e4f61e 100%);
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+a {
+  text-decoration: none !important;
+  font-size: 19px;
+  color: white !important;
+  font-family: "Sedgwick Ave Display", cursive;
+}
+
+.header1 {
+  margin-left: 840px;
+  margin-top: 40px;
+}
+
+.actual-header {
+  position: relative;
+  right: 650px;
+  top: 140px;
+  font-size: 90px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main-image {
+  margin-top: -110px;
+  width: 650px;
+  height: 400px;
+  border-radius: 6px;
+}
+
+.overall {
+  margin-top: 120px;
+  background-color: black;
+  border-radius: 4px;
+}
+
+.catagory {
+  margin-left: 590px;
+  font-size: 30px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.question {
+  margin-left: 530px;
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+  width: 480px;
+}
+
+.input-part {
+  margin-left: 520px;
+}
+
+label {
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.finish-button {
+  background-image: linear-gradient(109.6deg, #3d8361 11.2%, #1c6758 91.1%);
+  width: 90px;
+  height: 40px;
+  color: white !important;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  border-radius: 4px;
+  border: 1px solid #1c6758;
+}
+
+.tries {
+  margin-left: 790px;
+}
+
+.message {
+  position: relative;
+  top: -140px;
+  font-size: 20px;
+  font-family: 'Noto Serif', serif;
+}
+
+.try {
+  position: relative;
+  top: -139px;
+  font-size: 20px;
+  font-family: 'Noto Serif', serif;
+}
+
+.reset-quiz-button {
+  position: relative;
+  top: -249px;
+  background-image: linear-gradient(109.6deg, #3d8361 11.2%, #1c6758 91.1%);
+  width: 90px;
+  height: 70px;
+  color: white !important;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  border: 1px solid #1c6758;
+  border-radius: 4px;
+}
+
+.links {
+  margin-top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: black;
+}
+
+.won-message {
+  position: relative;
+  right: 180px;
+  top: 90px;
+  font-size: 40px;
+  background: green;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-transform: translate(40%, -50%);
+          transform: translate(40%, -50%);
+  border-radius: 0.5rem;
+}
+
+.lost-message {
+  position: relative;
+  right: -10px;
+  top: 90px;
+  font-size: 40px;
+  background: red;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 0.5rem;
+}
+
+.score {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 10px;
+}
+
+#login {
+  width: 240px;
+  height: 80px;
+  margin-left: 240px;
+  position: relative;
+  top: -120px;
+  border-radius: 10px;
+  font-family: "Noto Serif", serif;
+  font-size: 20px;
+  background-image: radial-gradient(circle 897px at 9% 80.3%, #373cf5 0%, rgba(234, 161, 15, 0.9) 100.2%);
+  color: white !important;
+}
+/*# sourceMappingURL=App.css.map */

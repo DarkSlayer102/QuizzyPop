@@ -1,27 +1,19 @@
 
 
+import React, { useEffect,useState,useRef } from 'react';
+
+import { Link } from 'react-router-dom';
+import {Timer} from '../components/Timer';
+import '../styles/hardLevel.css';
+import { HomeLink } from '../components/Links';
+import Button from 'react-bootstrap/Button';
+import { FeedbackBox } from '../components/Feedbacks/Feedback';
 
 
-
-
-import React, { useState,useEffect,useRef } from 'react';
-import { LevelEz } from './levels/easyLevel';
-import {LevelHard} from './levels/hardLevel';
-import { LevelMed } from './levels/mediumLevel';
-import './styles/App.css';
-import { Link,Route, Routes } from 'react-router-dom';
-import { checkText } from 'smile2emoji';
-import { FeedbackBox } from './components/Feedbacks/Feedback';
-import { Footers } from './components/Footer';
-import {Timer} from './components/Timer';
-import {UserLogin} from './components/login';
-
-
-//Main Component
-function MainFrame(){
+export function LevelHard(){
 
   //states and refs
-  const smileyFace = checkText(':)');
+
 
   let displayWonMessage = useRef();
   let displayLostMessage = useRef();
@@ -232,7 +224,7 @@ function MainFrame(){
         const handleWinningCase = ()=>{
 
             if (listVals[i].value === correctAns){
-                      {displayWonMessage.current.textContent = `You WONNNNNNN!!!!!!!!!!! ${smileyFace}`}
+                      {displayWonMessage.current.textContent = `You WONNNNNNN!!!!!!!!!!! `}
                   setScore(preScore => preScore + 1)
                   setTries(0)
                   resetQuiz();
@@ -275,7 +267,18 @@ function MainFrame(){
   //Rendering HTML
 
   return (
+  <div>
+  
+  <section>
+        
+      <Button variant="outline-danger" onClick={HomeLink} size="lg"  >Home</Button>{' '}
+
+  </section>
+  
   <div class='overall'>
+
+    
+
     <h1 class='catagory'>Catagory: {info.replace('Entertainment:', '')}</h1>
 
 
@@ -335,100 +338,11 @@ function MainFrame(){
     </div>
 
     
+
+    
+  </div>
   </div>
 
   )
 
 }
-
-//header function 
-function header(headline){
-  return (
-    <div class='header1'>
-      <header class='actual-header'>{headline}</header>
-      <img src='./test_your_knowledge_image.jpg' class='main-image'></img>
-      
-    </div>
-  )
-}
-
-
-//Dynamic Different Level Links function maintaining multi pages links
-function DifferentLevelLinks(easy,medium,hard){
-      return (
-         <nav>
-          <li class='easy'>
-            <a><Link to="/easy">{easy}</Link></a>
-            <br></br>
-          </li>
-
-           <li class='medium'>
-            <a><Link to="/medium">{medium}</Link></a>
-          </li>
-
-          <li class='hard'>
-           <a><Link to="/hard">{hard}</Link></a>
-           
-          </li>
-
-         
-        </nav>
-      )
-
-}
-
-// Outputing Function App for rendering to the page
-
-function App() {
-
-
-  
-
-  return (
-    <div className="App">
-      <section>
-
-        
-        {DifferentLevelLinks('Easy Level','Medium Level','Hard Level')}
-         
-        
-        <Routes>
-          <Route path="/easy" element={<LevelEz/>}/>
-          <Route path="/hard" element={<LevelHard />} />
-          <Route path="/hard" element={<LevelMed />} />
-          <Route path='/login' element={<UserLogin />} />
-        </Routes>
-
-      <div class='header-middle-section'>
-            {header('Here Test your Knowledge ↓ ')}
-            <a><button id='login'><Link to="/login">Login</Link></button></a>
-
-      </div>
-
-    </section>
-      
-    
-
-      <section>
-        <div class='main-part'>
-          {MainFrame()}
-          
-        </div>
-          
-      </section>
-
-      <section>
-         <br></br>
-      {FeedbackBox()}
-    </section>
-      <br></br>
-        
-        <Footers/>
-
-    
-    </div>
-  );
-
-}
-
-export default App;

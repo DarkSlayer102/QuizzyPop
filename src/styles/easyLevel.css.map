@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,ySAAI;AAGZ,AAAA,IAAI,CAAA;EACA,UAAU,EAAE,GAAG;CAClB;;AACD,AAAA,cAAc,CAAA;EACV,SAAS,EAAE,IAAI;EACf,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,KAAK;EACV,WAAW,EAAE,eAAe;CAC/B",
+    "sources": [
+        "easyLevel.scss"
+    ],
+    "names": [],
+    "file": "easyLevel.css"
+}

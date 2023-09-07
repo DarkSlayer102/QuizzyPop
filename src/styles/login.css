@@ -1,0 +1,29 @@
+button {
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #263361 0%, #418fde 79%);
+  font-size: 20px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid #263361;
+}
+
+.mainForm {
+  background-image: linear-gradient(109.6deg, #671e75 11.2%, #fc4c02 91.1%);
+  margin-left: 540px;
+  margin-top: 140px;
+  width: 540px;
+  height: 400px;
+  padding-left: 140px;
+  border-radius: 10px;
+}
+
+header {
+  font-size: 40px;
+  margin-left: 50px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input {
+  width: 190px;
+  border-radius: 4px;
+}
+/*# sourceMappingURL=login.css.map */

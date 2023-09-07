@@ -1,0 +1,35 @@
+
+
+
+
+button{
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(38, 51, 97, 1) 0%, rgba(65, 143, 222, 1) 79%);
+    font-size: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid rgba(38, 51, 97, 1);
+}
+
+
+.mainForm{
+    background-image: linear-gradient(109.6deg, rgba(103, 30, 117, 1) 11.2%, rgba(252, 76, 2, 1) 91.1%);
+    margin-left: 540px;
+    margin-top: 140px;
+    width: 540px;
+    height: 400px;
+    padding-left: 140px;
+    border-radius: 10px;
+}
+
+
+$font-size-for-header: 40px;
+header{
+    font-size: $font-size-for-header;
+    margin-left: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input{
+    width: 190px;
+    border-radius: 4px;
+}
